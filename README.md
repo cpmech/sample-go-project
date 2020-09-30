@@ -8,7 +8,7 @@ We keep the tools in the **cmd** subdirectory and the library files in the **lib
 
 **lib/go.mod** is:
 
-```go
+```
 module _/lib
 
 go 1.15
@@ -16,7 +16,7 @@ go 1.15
 
 And, as cmd imports lib, we need **cmd/go.mod**:
 
-```go
+```
 module _/cmd
 
 go 1.15
