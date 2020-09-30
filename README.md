@@ -1,10 +1,12 @@
 # Very simple example of a Go project structure
 
+NOTE: this project structure does not work with _gopls_; set `"go.useLanguageServer": false` in VS Code.
+
 This repository shows a simple structure for a Go project with _commands_ and _libraries_ using the **go modules** approach. Thus, we can save this project anywhere in the filesystem.
 
-We keep the tools in the `cmd` subdirectory and the library files in the `lib` subdirectory. We need two go.mod files, one for each subdirectory.
+We keep the tools in the **cmd** subdirectory and the library files in the **lib** subdirectory. We need two go.mod files, one for each subdirectory.
 
-lib/go.mod is:
+**lib/go.mod** is:
 
 ```go
 module _/lib
@@ -12,7 +14,7 @@ module _/lib
 go 1.15
 ```
 
-And, as cmd imports lib, we need:
+And, as cmd imports lib, we need **cmd/go.mod**:
 
 ```go
 module _/cmd
